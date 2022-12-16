@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* to customize tailwind we have... */
+/* added in config or in as an arbitary variant using in the hover state */
+/* added as an arbitary variant using in the hover state */
+
+/* using layer utilities */
+
+@layer utilities {
+  /* note: utilities will override other things */
+
+  .perspective {
+    perspective: 100px;
+    /* scale 1 - 100 in the z direction  */
+    /* sets scle for the z-index to 100px */
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .distance-1 {
+    /* transform: translateZ(-100px); */
+    transform: translateZ(-100px) scale(2);
+  }
+
+  .distance-2 {
+    transform: translateZ(-50px) scale(1.5);
+  }
+
+  /* note: command + shirft + p => layers panel */
+}
